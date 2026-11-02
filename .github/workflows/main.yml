@@ -1,4 +1,3 @@
-
 name: Build Garage Manager APK
 
 on:
@@ -9,7 +8,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
@@ -31,15 +30,6 @@ jobs:
           test -f www/index.html
           ls -la www
 
-      - name: Install Capacitor Android
-        run: npm install @capacitor/android
-
-      - name: Add Android platform
-        run: npx cap add android
-
-      - name: Sync Capacitor
-        run: npx cap sync android
-
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
@@ -48,6 +38,16 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK packages
+        run: |
+          sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Add Android platform
+        run: npx cap add android
+
+      - name: Sync Capacitor
+        run: npx cap sync android
 
       - name: Build APK
         run: |
@@ -60,4 +60,3 @@ jobs:
         with:
           name: Garage-Manager-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
-          
