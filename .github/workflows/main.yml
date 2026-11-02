@@ -1,3 +1,4 @@
+
 name: Build Garage Manager APK
 
 on:
@@ -18,15 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Garage Manager web app
+      - name: Build web app
         run: npm run build
 
-      - name: Check web assets
+      - name: Verify web assets
         run: |
           test -f www/index.html
           ls -la www
@@ -60,3 +60,4 @@ jobs:
         with:
           name: Garage-Manager-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
+          
