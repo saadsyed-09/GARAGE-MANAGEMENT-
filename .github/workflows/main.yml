@@ -3,27 +3,42 @@ name: Build Garage Manager APK
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build web app
+      - name: Build Garage Manager web app
+        run: npm run build
+
+      - name: Check web assets
         run: |
-          npm run build
-          mkdir -p www
-          cp -r dist/. www/
+          test -f www/index.html
+          ls -la www
+
+      - name: Install Capacitor Android
+        run: npm install @capacitor/android
+
+      - name: Add Android platform
+        run: npx cap add android
+
+      - name: Sync Capacitor
+        run: npx cap sync android
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -31,11 +46,8 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Setup Android
-        run: |
-          npm install @capacitor/android
-          npx cap add android
-          npx cap sync android
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
 
       - name: Build APK
         run: |
