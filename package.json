@@ -1,0 +1,17 @@
+{
+  "name": "garage-manager",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Garage Manager mobile workshop app",
+  "scripts": {
+    "build": "node build.js",
+    "android": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/android": "^7.4.3"
+  }
+}
