@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -26,9 +26,7 @@ jobs:
         run: npm run build
 
       - name: Verify web assets
-        run: |
-          test -f www/index.html
-          ls -la www
+        run: test -f www/index.html
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -36,11 +34,9 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Install Android SDK packages
+      - name: Install Android SDK
         run: |
+          yes | sdkmanager --licenses
           sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
 
       - name: Add Android platform
