@@ -1,7 +1,10 @@
-name: Build CarvoX APK
+name: CarvoX APK
 
 on:
 workflow_dispatch:
+push:
+branches:
+- main
 
 permissions:
 contents: read
@@ -19,7 +22,6 @@ steps:
     uses: actions/setup-node@v4
     with:
       node-version: 22
-      cache: npm
 
   - name: Install dependencies
     run: npm install
@@ -40,16 +42,12 @@ steps:
 
   - name: Setup Android SDK
     uses: android-actions/setup-android@v4
-    with:
-      cmdline-tools-version: 15859902
-      accept-android-sdk-licenses: true
-      log-accepted-android-sdk-licenses: false
-      packages: ''
+      with:
+        accept-android-sdk-licenses: true
 
   - name: Install Android SDK packages
     run: |
-      sdkmanager --sdk_root="$ANDROID_SDK_ROOT" \
-        "platforms;android-35" \
+      sdkmanager "platforms;android-35" \
         "build-tools;35.0.0" \
         "platform-tools"
 
@@ -62,7 +60,7 @@ steps:
   - name: Sync Capacitor
     run: npx cap sync android
 
-  - name: Build CarvoX APK
+  - name: Build APK
     run: |
       cd android
       chmod +x gradlew
