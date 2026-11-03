@@ -1,11 +1,13 @@
+
 {
-  "name": "garagepro",
+  "name": "carvox",
   "version": "2.0.0",
   "private": true,
-  "description": "GaragePro v2.0 mobile workshop management app",
+  "description": "CarvoX Smart Garage App",
   "scripts": {
     "build": "node build.js",
-    "android": "npx cap sync android"
+    "android": "npx cap sync android",
+    "icons": "npx capacitor-assets generate"
   },
   "dependencies": {
     "@capacitor/core": "^7.4.3"
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@capacitor/cli": "^7.4.3",
     "@capacitor/android": "^7.4.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "@capacitor/assets": "^3.0.5"
   }
 }
