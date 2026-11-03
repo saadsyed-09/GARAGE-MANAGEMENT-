@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#051F20"><title>GaragePro</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#051F20"><title>CarvoX</title>
 <style>
 :root{--bg:#000;--panel:#090909;--panel2:#111;--line:#242424;--text:#f5f5f5;--muted:#8d8d93;--lime:#4b9cff;--lime2:#2e83ef;--red:#ff6868;--radius:22px}
 *{box-sizing:border-box}body{margin:0;background:#000;color:var(--text);font:15px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;min-height:100vh;letter-spacing:-.12px}
@@ -26,7 +26,7 @@ body{font-size:calc(15px * var(--font-scale))}
 .home-brand-banner h2{font-size:calc(24px * var(--font-scale));margin:0 0 5px;letter-spacing:-.7px}
 .home-brand-banner .banner-sub{font-size:calc(12px * var(--font-scale));color:#9b9ba3;line-height:1.45}
 
-/* Garage Manager · Liquid Glass green refresh */
+/* CarvoX · Liquid Glass green refresh */
 :root{--bg:#051f20;--panel:rgba(11,43,38,.58);--panel2:rgba(22,56,50,.58);--line:rgba(142,182,155,.22);--text:#e7f5eb;--muted:#a6c6b5;--lime:#8eb69b;--lime2:#235347;--red:#ff8585;--radius:25px}
 html,body{background:#051f20!important;color:#e7f5eb!important}
 body{background:radial-gradient(ellipse at 12% 0%,rgba(35,83,71,.5),transparent 42%),radial-gradient(ellipse at 90% 55%,rgba(22,56,50,.42),transparent 45%),linear-gradient(160deg,#051f20 0%,#0b2b26 48%,#051f20 100%)!important;background-attachment:fixed!important}
@@ -54,122 +54,6 @@ body{background:radial-gradient(ellipse at 12% 0%,rgba(35,83,71,.5),transparent 
 @media(max-width:420px){.nav{gap:2px!important;padding:6px!important}.nav button{font-size:10px!important;padding:7px 1px!important}.nav button .ico{font-size:17px!important}}
 @media(prefers-reduced-transparency:reduce){.card,.stat,.item,.nav,.top,.sheet{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}}
 
-
-/* GaragePro v2.0 — full-app premium blue theme + open header */
-.app-title-row{
-  background:transparent!important;border:0!important;border-radius:0!important;
-  box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
-  padding:4px 2px!important;margin:5px 0 24px!important;
-}
-body[data-theme="blue"]{
- --gm-accent:#78bdff;--gm-accent2:#247de0;--gm-accent-soft:#102b49;
- --gm-glass-edge:rgba(150,202,255,.30);--gm-glass-shine:rgba(225,242,255,.18);
- background:#030812!important;color:#eef6ff!important;
-}
-body[data-theme="blue"]::before{
- background-image:var(--gm-bg-image);
- background-position:center center;background-size:cover;
- filter:saturate(.72) hue-rotate(14deg);
- opacity:var(--bg-image-opacity,.82);
-}
-body[data-theme="blue"]::after{
- background:linear-gradient(180deg,rgba(2,8,18,.30),rgba(3,12,27,.48) 38%,rgba(2,8,18,.82) 100%),
- radial-gradient(ellipse at 50% 0%,rgba(45,126,220,.22),transparent 60%)!important;
-}
-body[data-theme="blue"] .top{
- background:transparent!important;border:0!important;box-shadow:none!important;
- backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
-}
-body[data-theme="blue"] .garagepro-title span:first-child{color:#f4f8ff!important}
-body[data-theme="blue"] .garagepro-title .pro-word{color:#1685ff!important;text-shadow:0 0 18px #1685ff50}
-body[data-theme="blue"] .sub{color:#a8c5e4!important}
-body[data-theme="blue"] .home-welcome{
- background:linear-gradient(135deg,rgba(12,31,53,.94),rgba(4,10,20,.94))!important;
- border-color:rgba(112,184,255,.34)!important;box-shadow:inset 0 1px rgba(225,242,255,.12),0 14px 38px #0005!important;
-}
-body[data-theme="blue"] .home-welcome h2{color:#f2f7ff}
-body[data-theme="blue"] .home-welcome p{color:#a9bfd8}
-body[data-theme="blue"] .eyebrow{color:#78bdff}
-body[data-theme="blue"] .home-orb{background:#102b49;border-color:#3679b9;color:#78bdff}
-body[data-theme="blue"] .card,
-body[data-theme="blue"] .stat,
-body[data-theme="blue"] .item,
-body[data-theme="blue"] .feature-panel,
-body[data-theme="blue"] .chart-card,
-body[data-theme="blue"] .home-card,
-body[data-theme="blue"] .sheet,
-body[data-theme="blue"] .staff-cal-sheet{
- background:linear-gradient(145deg,rgba(12,32,54,.88),rgba(3,10,20,.88))!important;
- border-color:rgba(150,202,255,.24)!important;
- box-shadow:0 12px 32px rgba(0,0,0,.28),inset 0 1px rgba(225,242,255,.10)!important;
- color:#eef6ff!important;
-}
-body[data-theme="blue"] .btn{
- background:rgba(9,28,48,.78)!important;color:#eaf4ff!important;
- border-color:rgba(150,202,255,.28)!important;
-}
-body[data-theme="blue"] .btn.primary{
- background:linear-gradient(135deg,#d8ecff,#77baff)!important;
- border-color:#b9dcff!important;color:#07111d!important;
- box-shadow:0 6px 20px rgba(54,139,230,.18)!important;
-}
-body[data-theme="blue"] .search,
-body[data-theme="blue"] .field input,
-body[data-theme="blue"] .field select,
-body[data-theme="blue"] .field textarea,
-body[data-theme="blue"] input,body[data-theme="blue"] select,body[data-theme="blue"] textarea{
- background:rgba(3,14,28,.78)!important;color:#eef6ff!important;
- border-color:rgba(112,184,255,.28)!important;
-}
-body[data-theme="blue"] .search::placeholder,
-body[data-theme="blue"] input::placeholder,
-body[data-theme="blue"] textarea::placeholder{color:#86a8ca!important}
-body[data-theme="blue"] .pill{background:#102b49!important;color:#b8dcff!important;border-color:#28527a!important}
-body[data-theme="blue"] .nav{
- background:linear-gradient(135deg,rgba(10,31,53,.92),rgba(2,9,20,.92))!important;
- border-color:rgba(150,202,255,.32)!important;
- box-shadow:0 18px 48px #0008,inset 0 1px rgba(225,242,255,.16)!important;
-}
-body[data-theme="blue"] .nav button{color:#9bb8d8!important}
-body[data-theme="blue"] .nav button.active{
- background:linear-gradient(135deg,#d8ecff,#77baff)!important;color:#07111d!important;
- box-shadow:0 4px 18px #247de033,inset 0 1px #fff9!important;
-}
-body[data-theme="blue"] .nav button.active .ico{color:#07111d!important}
-body[data-theme="blue"] .bar{background:#152a40!important}
-body[data-theme="blue"] .bar span{background:linear-gradient(90deg,#287de0,#78bdff)!important}
-body[data-theme="blue"] .section-head h2,
-body[data-theme="blue"] .item h3,
-body[data-theme="blue"] .card h3{color:#eef6ff!important}
-body[data-theme="blue"] .meta,
-body[data-theme="blue"] .notice,
-body[data-theme="blue"] .field label{color:#a8c5e4!important}
-body[data-theme="blue"] .header-settings,
-body[data-theme="blue"] .info-icon{color:#78bdff!important;border-color:#78bdff45!important;background:#78bdff0d!important}
-body[data-theme="blue"] .report-stat{
- background:linear-gradient(145deg,#0d2741,#040d19)!important;
- border-color:#78bdff35!important;color:#eef6ff!important;
-}
-body[data-theme="blue"] .report-stat .value{color:#78bdff!important}
-body[data-theme="blue"] .report-stat .stat-foot{color:#9bb8d8!important}
-body[data-theme="blue"] .report-stat:first-child{
- background:linear-gradient(135deg,#78bdff,#287de0)!important;color:#061321!important;
-}
-body[data-theme="blue"] .report-stat:first-child .label,
-body[data-theme="blue"] .report-stat:first-child .value,
-body[data-theme="blue"] .report-stat:first-child .stat-foot{color:#061321!important}
-body[data-theme="blue"] .modal{background:rgba(0,5,14,.72)!important}
-body[data-theme="blue"] .sheet{background:linear-gradient(145deg,#0b2036,#030a14)!important}
-body[data-theme="blue"] .feature-sheet{background:#071526!important;color:#eef6ff!important;border-color:#78bdff35!important}
-body[data-theme="blue"] .feature-form-grid input,
-body[data-theme="blue"] .feature-form-grid select,
-body[data-theme="blue"] .feature-form-grid textarea{background:#030d1a!important;color:#eef6ff!important;border-color:#78bdff35!important}
-body[data-theme="blue"] .version-sheet{background:#061426!important;color:#eef6ff!important;border-color:#78bdff35!important}
-body[data-theme="blue"] .cal-day.present{background:#123d32;color:#8df0ad}
-body[data-theme="blue"] .cal-day.absent{background:#512329;color:#ff9ba5}
-body[data-theme="blue"] .cal-day.leave{background:#51401d;color:#ffd47b}
-body[data-theme="blue"] .cal-day.half{background:#153d60;color:#9bd4ff}
-
 </style>
 <style>
 .staff-cal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:9999;display:none;align-items:flex-end;justify-content:center;padding:12px}.staff-cal-sheet{width:min(100%,560px);max-height:88vh;overflow:auto;background:#101114;border:1px solid #34363b;border-radius:24px;padding:18px;color:#f4f4f5}.cal-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin-top:14px}.cal-day{min-height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:13px;background:#24262a;color:#a8abb1}.cal-day.present{background:#174b32;color:#8df0ad;border:1px solid #2e8754}.cal-day.absent{background:#512329;color:#ff9ba5;border:1px solid #9b424d}.cal-day.leave{background:#51401d;color:#ffd47b;border:1px solid #8d6b2e}.cal-day.half{background:#253e56;color:#9bd4ff;border:1px solid #3c719b}.cal-day.today{outline:2px solid #8ab4ff}.cal-week{font-size:11px;color:#888;text-align:center}.cal-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}.cal-summary .stat{padding:12px;text-align:center}.cal-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:12px;color:#bbb}.cal-legend span{display:flex;align-items:center;gap:5px}.cal-dot{width:9px;height:9px;border-radius:3px;display:inline-block}
@@ -184,4 +68,71 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;back
 .top,.card,.stat,.item,.feature-panel,.chart-card,.home-card,.sheet,.staff-cal-sheet{background:linear-gradient(135deg,rgba(10,45,39,.62),rgba(3,24,22,.56))!important;border:1px solid rgba(218,241,222,.20)!important;backdrop-filter:blur(24px) saturate(165%)!important;-webkit-backdrop-filter:blur(24px) saturate(165%)!important;box-shadow:0 12px 35px rgba(0,0,0,.28),inset 0 1px rgba(230,255,240,.13)!important}
 .btn,.search,.field input,.field select,.field textarea{backdrop-filter:blur(18px) saturate(150%)!important;-webkit-backdrop-filter:blur(18px) saturate(150%)!important}
 .nav{border-radius:999px!important;background:linear-gradient(135deg,rgba(13,52,45,.78),rgba(2,20,19,.70))!important;border:1px solid rgba(218,241,222,.30)!important;backdrop-filter:blur(34px) saturate(190%)!important;-webkit-backdrop-filter:blur(34px) saturate(190%)!important;box-shadow:0 16px 44px rgba(0,0,0,.44),inset 0 1px rgba(230,255,240,.20)!important}
-.nav button{border-radius:999px!im
+.nav button{border-radius:999px!important;min-height:48px!important}.nav button.active{background:linear-gradient(135deg,#daf1de,#8eb69b)!important;color:#051f20!important;box-shadow:0 4px 18px rgba(142,182,155,.25),inset 0 1px rgba(255,255,255,.68)!important}
+.brandbar,.home-brand-banner{display:none!important}
+#garageBackgroundSettings .field{margin-top:12px}#garageBackgroundSettings input[type=range]{padding:0;accent-color:#8eb69b}#garageBackgroundSettings input[type=file]{padding:10px}
+@media(prefers-reduced-transparency:reduce){body::before{opacity:.35}.top,.card,.stat,.item,.nav,.sheet{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}}
+</style>
+
+<style id="garage-manager-final-liquid-glass">
+:root{
+ --gm-glass:rgba(9,43,37,.46);
+ --gm-glass-edge:rgba(218,241,222,.28);
+ --gm-glass-shine:rgba(235,255,244,.16);
+}
+html{background:#041817}
+body::before{background-position:center center;background-size:cover;opacity:var(--bg-image-opacity,.88)}
+body::after{background:linear-gradient(180deg,rgba(1,10,10,.12),rgba(2,18,16,.22) 34%,rgba(2,18,16,.48) 100%),radial-gradient(ellipse at 50% 0%,rgba(142,182,155,.12),transparent 58%)}
+.app{padding-top:18px}
+.top,.card,.stat,.item,.feature-panel,.chart-card,.home-card,.sheet,.staff-cal-sheet{
+ background:linear-gradient(135deg,rgba(18,65,55,.54),rgba(3,25,23,.40))!important;
+ border:1px solid var(--gm-glass-edge)!important;
+ backdrop-filter:blur(30px) saturate(175%)!important;
+ -webkit-backdrop-filter:blur(30px) saturate(175%)!important;
+ box-shadow:0 14px 40px rgba(0,0,0,.28),inset 0 1px var(--gm-glass-shine),inset 0 -1px rgba(0,0,0,.12)!important;
+}
+.top{border-radius:30px!important}
+.grid .btn.primary{
+ background:linear-gradient(135deg,rgba(218,241,222,.22),rgba(142,182,155,.13))!important;
+ color:#e7f5eb!important;
+ border:1px solid rgba(218,241,222,.34)!important;
+ backdrop-filter:blur(26px) saturate(180%)!important;
+ -webkit-backdrop-filter:blur(26px) saturate(180%)!important;
+ box-shadow:0 8px 24px rgba(0,0,0,.16),inset 0 1px rgba(255,255,255,.20)!important;
+}
+.grid .btn.primary:active,.btn:active{transform:scale(.975);filter:brightness(1.16)}
+.btn{background:rgba(8,43,37,.44)!important;border-color:rgba(218,241,222,.26)!important}
+.search,.field input,.field select,.field textarea{
+ background:rgba(3,24,22,.48)!important;
+ border:1px solid rgba(218,241,222,.24)!important;
+ box-shadow:inset 0 1px rgba(255,255,255,.06)!important;
+}
+.nav{
+ background:linear-gradient(135deg,rgba(18,65,55,.72),rgba(2,20,19,.68))!important;
+ border:1px solid rgba(218,241,222,.34)!important;
+ backdrop-filter:blur(38px) saturate(200%)!important;
+ -webkit-backdrop-filter:blur(38px) saturate(200%)!important;
+ box-shadow:0 18px 48px rgba(0,0,0,.42),inset 0 1px rgba(255,255,255,.22)!important;
+}
+.nav button.active{background:linear-gradient(135deg,rgba(218,241,222,.92),rgba(142,182,155,.84))!important}
+.section-head{animation:gmFadeUp .42s ease both}
+.section.active .grid .btn{animation:gmFadeUp .48s ease both}
+.section.active .grid .btn:nth-child(2){animation-delay:.04s}
+.section.active .grid .btn:nth-child(3){animation-delay:.08s}
+.section.active .grid .btn:nth-child(4){animation-delay:.12s}
+.section.active .grid .btn:nth-child(5){animation-delay:.16s}
+@keyframes gmFadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head><body><main class="app">
+<div class="top app-title-row"><div class="carvox-brand"><div class="carvox-mark" id="carvoxHeaderLogo">CX</div><div><div class="brand">CARVOX</div><h1 class="garagepro-title">CarvoX</h1><div class="sub" id="garageNameHeader"></div></div></div><div class="header-actions"><button class="header-settings" onclick="openVersionInfo()" aria-label="About CarvoX" title="About">ⓘ</button><button class="header-settings" onclick="openSettings()" aria-label="Settings" title="Settings">⚙</button></div></div>
+<section id="home" class="section active">
+<div class="notice" id="todayLabel"></div>
+<div class="home-welcome"><div><span class="eyebrow">OWNER WORKSPACE</span><h2>Good to see you.</h2><p>Manage your garage operations from one place.</p></div><span class="home-orb">GM</span></div>
+<div class="section-head"><h2>Quick actions</h2></div>
+<div class="grid"><button class="btn primary" onclick="openModal('bill')">＋ Create bill</button><button class="btn" onclick="openModal('stock')">＋ Add stock</button><button class="btn" onclick="openModal('customer')">＋ Add customer</button><button class="btn" onclick="openModal('expense')">＋ Add expense</button><button class="btn" onclick="openModal('staff')">＋ Add staff</button><button class="btn" onclick="openModal('attendance')">✓ Mark attendance</button><button class="btn" onclick="go('staff')">◉ Staff & Attendance</button><button class="btn" onclick="go('reports')">▥ View reports</button></div>
+<div class="section-head"><h2>Today at a glance</h2></div>
+<div class="grid home-stats"><div class="stat"><div class="label">Received today</div><div class="value" id="homeReceived">₹0</div></div><div class="stat"><div class="label">Expenses today</div><div class="value" id="homeExpenses">₹0</div></div><div class="stat"><div class="label">Bills today</div><div class="value" id="homeBills">0</div></div></div>
+<div class="section-head"><h2>Recent bills</h2><button class="btn small" onclick="go('bills')">View all</button></div><div id="homeRecentBills" class="list"></div></section>
+<section id="stock" class="section"><div class="section-head"><h2>Stock & Inventory</h2><button class="btn primary" onclick="openModal('stock')">＋ Add item</button></div><input class="search" id="stockSearch" placeholder="Search part name / part no" oninput="renderStock()"><div class="notice">Low-stock alert: items at or below their threshold are marked ⚠. Default threshold is 3 pcs; set your own when editing an item.</div><div id="stockList" class="list"></div></section>
+<section id="bills" class="section"><div class="section-head"><h2>Billing</h2><button class="btn primary" onclick="openModal('bill')">＋ Create bill</button></div><input class="search"
